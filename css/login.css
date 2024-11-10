@@ -1,0 +1,282 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#navbar-main {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #cecece;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4em;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+#carrinho-btn {
+position: relative; /* Necessário para o posicionamento da bolinha */
+}
+
+.cart-notificacao {
+position: absolute;
+top: -10px;
+left: 20px;
+width: 15px;
+height: 15px;
+background-color: red;
+color: rgb(255, 255, 255);
+font-size: 10px;
+font-weight: bold;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: -1; 
+visibility: hidden;
+}
+
+.cart-notificacao.show {
+visibility: visible;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+#search-container {
+  position: relative;
+  width: 400px; /* Ajuste conforme necessário */
+}
+
+#search-input {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 1.3vw;
+  border-radius: 30px;
+  border: 1.5px #202020 solid;
+}
+
+#search-input:focus {
+  outline: none;
+
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.list-navbar-main {
+  display: flex;
+  list-style: none;
+}
+
+.list-navbar-main a {
+  color: #202020;
+  text-decoration: none;
+  transition: ease-in-out 0.15s;
+}
+
+.list-navbar-main a:hover {
+  color: #ca3232;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.container-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  column-gap: 10px;
+}
+
+.container {
+  padding: px;
+  margin-top: 6.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-img {
+  width: 400px;
+  height: 550px;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-register {
+  display: flex;
+}
+
+.container-inputs{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  padding: 30px;
+  width: 400px;
+  align-items: center;
+}
+
+.container-inputs h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 5px;
+}
+
+.container-inputs input {
+  padding: 10px 30px;
+  border: 1px #ca3232 solid;
+  box-shadow: 1px 1px 10px #ca3232;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13pt;
+  margin-bottom: 20px;
+}
+
+.container-inputs input:focus {
+  outline: none;
+}
+
+.icon-input { 
+  position: relative;
+  display: inline-block;
+}
+
+.icon-input img {
+  position: absolute;
+  top: 23%;
+  left: 10px;
+  width: 15px; 
+  height: 15px; 
+}
+
+.alerta {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13pt;
+  margin-bottom: 10px;
+  color: #f11515;
+  display: none;
+  max-width: 70%;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  align-items: baseline;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+}
+
+#show-password {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkbox-container a {
+  text-decoration: none;
+  color: #ca3232;
+}
+
+.checkbox-container a:hover {
+  color: #a82929;
+  text-decoration: underline;
+}
+
+.checkbox-container input {
+  box-shadow: none;
+  accent-color: #ca3232;
+}
+
+.checkbox-container input:hover {
+  cursor: pointer;
+}
+
+.possuo-conta {
+  text-decoration: underline;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  margin-top: 10px;
+  transition: ease 0.15s;
+}
+
+.possuo-conta:hover {
+  color: #ca3232;
+  cursor: pointer;
+}
+
+.entrar-conta-btn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.3vw;
+  font-family: 'Times New Roman', Times, serif;
+  width: 200px;
+  border-radius: 20px;
+  background-color: #ca3232;
+  border: none;
+  box-shadow: 1px 1px 10px #ca3232;
+  color: white;
+  transition: ease 0.2s;
+}  
+
+.entrar-conta-btn:hover {
+  cursor: pointer;
+  background-color: #a82929;
+}
+
+.mensagem {
+  background-color: #ca3232;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.mensagem h3 {
+  margin-top: 40%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6vw;
+}
+
+.mensagem p {
+  width: 80%;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5;
+}
