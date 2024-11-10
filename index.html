@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Pizzaria do zé</title>
 </head>
 <body>
@@ -21,15 +21,23 @@
                 <i class="fa-solid fa-home"></i>
                 <li>Home</li>
             </div></a>
+            <a href="#">
+              <div class="container-navbar" id="container-navbar-user">
+                <i class="fa-solid fa-user"></i>
+                <li>Perfil</li>
+              </div>
+            </a>
             <a href="#"><div class="container-navbar" id="carrinho-btn">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <li>Carrinho</li>
                 <span class="cart-notificacao">0</span>
             </div></a>
-            <a href="#"><div class="container-navbar">
-                <i class="fa-solid fa-user"></i>
-                <li>Perfil</li>
-            </div></a>
+            
+            <div class="registro-login-container">
+              <p>Não possui conta? crie uma agora ou faça login que já tiver uma.</p>
+              <a class="criar-conta" href="html/register.html">Criar Conta</a>
+              <a class="entrar-conta" href="html/login.html">Entrar</a>
+            </div>
         </ul>
     </nav>
 
