@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria do zé | Register</title>
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="navbar-main">
+    <a href=""><img src="../img/logo.png" alt="Imagem logo" class="logo"/></a>
+    <div id="search-container">
+        <input type="search" name="search" id="search-input">
+        <img src="../img/search.png" alt="ïcone lupa search" class="search-icon">
+    </div>
+    <ul class="list-navbar-main">
+        <a href="../index.html"><div class="container-navbar">
+            <i class="fa-solid fa-home"></i>
+            <li>Home</li>
+        </div></a>
+        <a><div class="container-navbar">
+          <i class="fa-solid fa-user"></i>
+          <li>Perfil</li>
+      </div></a>
+        <a href="../index.html"><div class="container-navbar" id="carrinho-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <li>Carrinho</li>
+            <span class="cart-notificacao">0</span>
+        </div></a>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="container-img">
+      <img src="../img/placeholder.jpg" alt="Imagem exclusiva da pizzaria">
+    </div>
+    <div class="container-register">
+      <div class="container-inputs">
+         <div id="nameC" class="icon-input">
+        <input type="text" name="name" id="name-ipt" placeholder="Username">
+        <img src="../img/img-icons/user.png" alt="icon input">
+        </div>
+
+        <div id="passwordC" class="icon-input">
+          <input type="password" name="" id="password-ipt" placeholder="Password">
+          <img src="../img/img-icons/lock.png" alt="icon input">
+        </div>
+
+        <div id="confirm-passwordC" class="icon-input">
+          <input type="password" name="" id="confirm-password-ipt" placeholder="Confirm Password">
+          <img src="../img/img-icons/lock.png" alt="icon input">
+        </div>
+
+        <p class="alerta"></p>
+
+        <div class="checkbox-container">
+          <div id="show-password">
+            <input type="checkbox" name="show-password" id="mostrar-senha">
+            <p>Exibir senha</p>
+          </div>
+
+        </div>
+
+        <button class="entrar-conta-btn">Entrar</button>
+
+      </div>
+      <aside class="mensagem">
+        <h3>Fico feliz em vê-lo(a)!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      </aside>
+    </div>
+  </main>
+  <script src="../js/login.js"></script>
+</body>
+</html>
